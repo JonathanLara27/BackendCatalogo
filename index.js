@@ -1,7 +1,7 @@
 'use strict'
 //cargamos el servidor de express
 var app = require('./app');
-app.set('port', process.env.PORT || 4500);
+app.set('port', process.env.PORT || 3000);
 require('dotenv').config();
 var mongoose = require('mongoose');
 var ip=require('ip');
