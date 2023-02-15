@@ -20,9 +20,9 @@ app.use((req, res, next) => {
 });
 
 //rutas
-//app.use('/', product_routes);
+app.use('/', product_routes);
 
 //si queremos escribir una rota sobre estas lo podemos hacer asi:
-app.use('/api', product_routes);
+//app.use('/api', product_routes);
 
 module.exports = app;
