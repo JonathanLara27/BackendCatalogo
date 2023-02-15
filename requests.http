@@ -1,0 +1,29 @@
+###
+POST http://localhost:4500/api/save-product HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "LAPTOP ",
+  "descripcion": "laptop gamer",
+  "categoria": "laptops",
+  "precio": 4005,
+  "stock": 10,
+  "imagen": "AyTmdG-US-vvD6BfinYeJCRY.jpg",
+  "color": "",
+  "ram": 0,
+  "rom": 0,
+  "pantalla": 0,
+  "resolucion": "",
+  "bateria": 0,
+  "camaraf": "",
+  "camarap": "",
+  "tipopantalla": "",
+  "tipoentrada": "",
+  "sistemaoperativo": "",
+  "procesador": "",
+  "peso": 0,
+  "alto": 0,
+  "ancho": 0,
+  "profundidad": 0,
+  "__v": 0
+}

@@ -1,0 +1,40 @@
+
+###
+@API=http://localhost:4500/api/
+@TK = {{ACCESS.response.body.token}}
+
+###
+# @name ACCESS
+POST {{API}}user/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "user": "admin",
+  "password": "admin"
+}
+
+###
+# @name ACCESS
+
+POST {{API}}/registraradmin HTTP/1.1
+Content-Type: application/json
+Authorization: {{TK}}
+{
+    "user": "vianetone12",
+    "password": "5403291"
+}
+
+GET http://localhost:4500/api/user/administradores
+
+### editar admin ###
+PUT http://localhost:4500/api/user/editaradmin/63cf3561e1026a40331acdcc HTTP/1.1
+Content-Type: application/json
+
+{
+  "user": "admineditado2",
+  "password": "admineditado2"
+}
+
+### eliminamos admin
+DELETE http://localhost:4500/api/user/eliminaradmin/63cf3561e1026a40331acdcc
+
